@@ -16,7 +16,7 @@ class m1_initial extends \phpbb\db\migration\migration
 		return isset($this->config['vk_auth_version']) && version_compare($this->config['vk_auth_version'], '1.0.0', '>=');
 	}
 
-	static public function depends_on()
+	public static function depends_on()
 	{
 		return array('\phpbb\db\migration\data\v310\dev');
 	}
